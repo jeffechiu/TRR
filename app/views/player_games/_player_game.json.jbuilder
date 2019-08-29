@@ -1,0 +1,2 @@
+json.extract! player_game, :id, :player_id, :game_id, :champion_id, :kills, :deaths, :assists, :doubles, :triples, :quadras, :pentas, :fbkill, :fbdeath, :fbassist, :drakes, :herald, :barons, :dmg, :gold, :goldspent, :wardsplaced, :wardskilled, :viswards, :viswardbuys, :cs10, :oppcs10, :gold10, :oppgold10, :gold15, :oppgold15, :xp10, :oppxp10, :created_at, :updated_at
+json.url player_game_url(player_game, format: :json)

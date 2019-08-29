@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  logo: MyString
+  abbrev: MyString
+  owner: MyString
+  founded: 1
+  league: one
+  country: one
+
+two:
+  name: MyString
+  logo: MyString
+  abbrev: MyString
+  owner: MyString
+  founded: 1
+  league: two
+  country: two

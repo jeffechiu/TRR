@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  patch: MyString
+  length: 1.5
+  week: 1
+  number: MyString
+
+two:
+  patch: MyString
+  length: 1.5
+  week: 1
+  number: MyString

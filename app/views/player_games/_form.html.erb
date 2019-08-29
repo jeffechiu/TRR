@@ -1,0 +1,172 @@
+<%= form_with(model: player_game, local: true) do |form| %>
+  <% if player_game.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(player_game.errors.count, "error") %> prohibited this player_game from being saved:</h2>
+
+      <ul>
+      <% player_game.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :player_id %>
+    <%= form.text_field :player_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :game_id %>
+    <%= form.text_field :game_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :champion_id %>
+    <%= form.text_field :champion_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kills %>
+    <%= form.number_field :kills %>
+  </div>
+
+  <div class="field">
+    <%= form.label :deaths %>
+    <%= form.number_field :deaths %>
+  </div>
+
+  <div class="field">
+    <%= form.label :assists %>
+    <%= form.number_field :assists %>
+  </div>
+
+  <div class="field">
+    <%= form.label :doubles %>
+    <%= form.number_field :doubles %>
+  </div>
+
+  <div class="field">
+    <%= form.label :triples %>
+    <%= form.number_field :triples %>
+  </div>
+
+  <div class="field">
+    <%= form.label :quadras %>
+    <%= form.number_field :quadras %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pentas %>
+    <%= form.number_field :pentas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fbkill %>
+    <%= form.number_field :fbkill %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fbdeath %>
+    <%= form.number_field :fbdeath %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fbassist %>
+    <%= form.number_field :fbassist %>
+  </div>
+
+  <div class="field">
+    <%= form.label :drakes %>
+    <%= form.number_field :drakes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :herald %>
+    <%= form.number_field :herald %>
+  </div>
+
+  <div class="field">
+    <%= form.label :barons %>
+    <%= form.number_field :barons %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dmg %>
+    <%= form.text_field :dmg %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gold %>
+    <%= form.number_field :gold %>
+  </div>
+
+  <div class="field">
+    <%= form.label :goldspent %>
+    <%= form.number_field :goldspent %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wardsplaced %>
+    <%= form.number_field :wardsplaced %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wardskilled %>
+    <%= form.number_field :wardskilled %>
+  </div>
+
+  <div class="field">
+    <%= form.label :viswards %>
+    <%= form.number_field :viswards %>
+  </div>
+
+  <div class="field">
+    <%= form.label :viswardbuys %>
+    <%= form.number_field :viswardbuys %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cs10 %>
+    <%= form.number_field :cs10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :oppcs10 %>
+    <%= form.number_field :oppcs10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gold10 %>
+    <%= form.number_field :gold10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :oppgold10 %>
+    <%= form.number_field :oppgold10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gold15 %>
+    <%= form.number_field :gold15 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :oppgold15 %>
+    <%= form.number_field :oppgold15 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :xp10 %>
+    <%= form.number_field :xp10 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :oppxp10 %>
+    <%= form.number_field :oppxp10 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

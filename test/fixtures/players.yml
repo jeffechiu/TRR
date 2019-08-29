@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  summoner: MyString
+  position: MyString
+  portrait: MyString
+  fname: MyString
+  lname: MyString
+  age: 1
+  country: one
+  team: one
+
+two:
+  summoner: MyString
+  position: MyString
+  portrait: MyString
+  fname: MyString
+  lname: MyString
+  age: 1
+  country: two
+  team: two

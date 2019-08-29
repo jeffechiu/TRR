@@ -1,0 +1,67 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  player: one
+  game: one
+  champion: one
+  kills: 1
+  deaths: 1
+  assists: 1
+  doubles: 1
+  triples: 1
+  quadras: 1
+  pentas: 1
+  fbkill: 1
+  fbdeath: 1
+  fbassist: 1
+  drakes: 1
+  herald: 1
+  barons: 1
+  dmg: 1.5
+  gold: 1
+  goldspent: 1
+  wardsplaced: 1
+  wardskilled: 1
+  viswards: 1
+  viswardbuys: 1
+  cs10: 1
+  oppcs10: 1
+  gold10: 1
+  oppgold10: 1
+  gold15: 1
+  oppgold15: 1
+  xp10: 1
+  oppxp10: 1
+
+two:
+  player: two
+  game: two
+  champion: two
+  kills: 1
+  deaths: 1
+  assists: 1
+  doubles: 1
+  triples: 1
+  quadras: 1
+  pentas: 1
+  fbkill: 1
+  fbdeath: 1
+  fbassist: 1
+  drakes: 1
+  herald: 1
+  barons: 1
+  dmg: 1.5
+  gold: 1
+  goldspent: 1
+  wardsplaced: 1
+  wardskilled: 1
+  viswards: 1
+  viswardbuys: 1
+  cs10: 1
+  oppcs10: 1
+  gold10: 1
+  oppgold10: 1
+  gold15: 1
+  oppgold15: 1
+  xp10: 1
+  oppxp10: 1

@@ -1,0 +1,119 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Team Games</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Team</th>
+      <th>Game</th>
+      <th>Kills</th>
+      <th>Deaths</th>
+      <th>Assists</th>
+      <th>Fbkill</th>
+      <th>Fbdeath</th>
+      <th>Fbassist</th>
+      <th>Drakes</th>
+      <th>Herald</th>
+      <th>Barons</th>
+      <th>Elders</th>
+      <th>Dmg</th>
+      <th>Gold</th>
+      <th>Goldspent</th>
+      <th>Wardsplaced</th>
+      <th>Wardskilled</th>
+      <th>Viswards</th>
+      <th>Viswardbuys</th>
+      <th>Cs10</th>
+      <th>Oppcs10</th>
+      <th>Gold10</th>
+      <th>Oppgold10</th>
+      <th>Gold15</th>
+      <th>Oppgold15</th>
+      <th>Xp10</th>
+      <th>Oppxp10</th>
+      <th>Side</th>
+      <th>Pick1</th>
+      <th>Pick2</th>
+      <th>Pick3</th>
+      <th>Pick4</th>
+      <th>Pick5</th>
+      <th>Ban1</th>
+      <th>Ban2</th>
+      <th>Ban3</th>
+      <th>Ban4</th>
+      <th>Ban5</th>
+      <th>Result</th>
+      <th>Towers</th>
+      <th>Firsttower</th>
+      <th>Fttime</th>
+      <th>Firstmid</th>
+      <th>First3towers</th>
+      <th>Minions</th>
+      <th>Monstersownjg</th>
+      <th>Monstersenemyjg</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @team_games.each do |team_game| %>
+      <tr>
+        <td><%= team_game.team %></td>
+        <td><%= team_game.game %></td>
+        <td><%= team_game.kills %></td>
+        <td><%= team_game.deaths %></td>
+        <td><%= team_game.assists %></td>
+        <td><%= team_game.fbkill %></td>
+        <td><%= team_game.fbdeath %></td>
+        <td><%= team_game.fbassist %></td>
+        <td><%= team_game.drakes %></td>
+        <td><%= team_game.herald %></td>
+        <td><%= team_game.barons %></td>
+        <td><%= team_game.elders %></td>
+        <td><%= team_game.dmg %></td>
+        <td><%= team_game.gold %></td>
+        <td><%= team_game.goldspent %></td>
+        <td><%= team_game.wardsplaced %></td>
+        <td><%= team_game.wardskilled %></td>
+        <td><%= team_game.viswards %></td>
+        <td><%= team_game.viswardbuys %></td>
+        <td><%= team_game.cs10 %></td>
+        <td><%= team_game.oppcs10 %></td>
+        <td><%= team_game.gold10 %></td>
+        <td><%= team_game.oppgold10 %></td>
+        <td><%= team_game.gold15 %></td>
+        <td><%= team_game.oppgold15 %></td>
+        <td><%= team_game.xp10 %></td>
+        <td><%= team_game.oppxp10 %></td>
+        <td><%= team_game.side %></td>
+        <td><%= team_game.pick1 %></td>
+        <td><%= team_game.pick2 %></td>
+        <td><%= team_game.pick3 %></td>
+        <td><%= team_game.pick4 %></td>
+        <td><%= team_game.pick5 %></td>
+        <td><%= team_game.ban1 %></td>
+        <td><%= team_game.ban2 %></td>
+        <td><%= team_game.ban3 %></td>
+        <td><%= team_game.ban4 %></td>
+        <td><%= team_game.ban5 %></td>
+        <td><%= team_game.result %></td>
+        <td><%= team_game.towers %></td>
+        <td><%= team_game.firsttower %></td>
+        <td><%= team_game.fttime %></td>
+        <td><%= team_game.firstmid %></td>
+        <td><%= team_game.first3towers %></td>
+        <td><%= team_game.minions %></td>
+        <td><%= team_game.monstersownjg %></td>
+        <td><%= team_game.monstersenemyjg %></td>
+        <td><%= link_to 'Show', team_game %></td>
+        <td><%= link_to 'Edit', edit_team_game_path(team_game) %></td>
+        <td><%= link_to 'Destroy', team_game, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Team Game', new_team_game_path %>
